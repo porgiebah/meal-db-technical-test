@@ -1,1 +1,3 @@
 export const STORE_CATEGORIES = 'STORE_CATEGORIES';
+export const STORE_MEALS = 'STORE_MEALS';
+export const STORE_RECIPES = 'STORE_RECIPES'; 
