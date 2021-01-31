@@ -1,0 +1,14 @@
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #282c34;
+}
+
+#app-title {
+  text-align: center;
+  color: white;
+}
+
+body {
+  margin-right: 100px;
+  margin-left: 100px;
+}

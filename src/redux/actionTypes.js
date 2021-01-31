@@ -1,0 +1,1 @@
+export const STORE_CATEGORIES = 'STORE_CATEGORIES';
