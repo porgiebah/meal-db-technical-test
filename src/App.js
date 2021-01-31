@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import PropTypes from 'prop-types';
 import { retrieveCategories } from './redux/actionCreators';
 import appStyles from './appStyles';
+import ListItem from './ListItem';
 
 const { listStyles: styles } = appStyles;
 
@@ -19,9 +20,9 @@ class App extends Component {
   }
 
   renderItem = (item) => {
-    const { strCategory } = item;
+    const { strCategoryThumb, strCategory, strCategoryDescription } = item;
     return (
-        <h1 key={strCategory} style={{ color: 'white'}}>{strCategory}</h1>
+        <ListItem imageUrl={strCategoryThumb} title={strCategory} text={strCategoryDescription} key={strCategory}/>
     );
   };
 
