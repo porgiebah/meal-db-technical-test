@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types';
+import ReactMarkdown from "react-markdown";
 import { getRecipe } from '../../redux/selectors';
 import appStyles from '../../appStyles';
 
@@ -57,7 +58,7 @@ class Recipe extends Component {
         <h1>{strMeal}</h1>
 
         <h2>Instructions</h2>
-        <p>{strInstructions}</p>
+        <ReactMarkdown source={strInstructions}/>
 
         <h2>Ingredients</h2>
         {this.renderIngredients(recipe)}

@@ -12,6 +12,9 @@ const appStyles = {
         textContainer: {
             marginLeft: 50, marginRight: 50, display: 'flex', flexDirection: 'column', textAlign: 'start'
         },
+        markdownText: {
+            fontSize: 20
+        }
     },
     recipeStyles: {
         rootContainer: {

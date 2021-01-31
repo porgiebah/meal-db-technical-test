@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types';
+import ReactMarkdown from "react-markdown";
 import appStyles from './appStyles';
 
 const { listItemStyles: styles } = appStyles;
@@ -27,7 +28,7 @@ class ListItem extends Component {
 
         <div style={styles.textContainer}>
           <h1>{title}</h1>
-          <p style={styles.description}>{text}</p>
+          <ReactMarkdown source={text} renderers={{paragraph: () => <p style={styles.markdownText}>{text}</p> }}/>
         </div>
        </button>
     );
