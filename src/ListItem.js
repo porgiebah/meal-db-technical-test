@@ -24,7 +24,7 @@ class ListItem extends Component {
     const { imageUrl, title, text } = this.props;
     return (
       <button onClick={this.onClick} style={styles.rootButtonContainer}>
-         <img src={imageUrl} style={styles.image} alt='img' />
+        <img src={imageUrl} style={styles.image} alt='img' />
 
         <div style={styles.textContainer}>
           <h1>{title}</h1>
