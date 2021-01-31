@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import PropTypes from 'prop-types';
 import { retrieveRecipe } from '../../redux/actionCreators';
 import { getMeals } from '../../redux/selectors';
-import ListItem from '../../ListItem';
+import ListItem from '../../components/ListItem/ListItem';
 import appStyles from '../../appStyles';
 
 const { listStyles: styles } = appStyles;
@@ -67,3 +67,4 @@ const mapStateToProps = (state, props) => {
 const mapDispatchToProps = { retrieveRecipe }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Meals);
+export { Meals as UnwrappedMeals }; 

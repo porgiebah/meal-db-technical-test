@@ -77,8 +77,8 @@ class Recipe extends Component {
 
     return (
         <div style={styles.rootContainer}>
-            {this.renderLeftColumn(strMealThumb, strYoutube, strSource )}
-            {this.renderRightColumn(strMeal, strInstructions, recipe )}
+          {this.renderLeftColumn(strMealThumb, strYoutube, strSource )}
+          {this.renderRightColumn(strMeal, strInstructions, recipe )}
         </div>
     );
   };
@@ -92,3 +92,4 @@ const mapStateToProps = (state, props) => {
 }
 
 export default connect(mapStateToProps)(Recipe);
+export { Recipe as UnwrappedRecipe }; 

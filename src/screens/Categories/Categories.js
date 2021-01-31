@@ -2,7 +2,7 @@ import { Component } from 'react';
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types';
 import { retrieveCategories, retrieveMeal } from '../../redux/actionCreators';
-import ListItem from '../../ListItem';
+import ListItem from '../../components/ListItem/ListItem';
 import appStyles from '../../appStyles';
 
 const { listStyles: styles } = appStyles;
@@ -56,3 +56,4 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = { retrieveCategories, retrieveMeal }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Categories);
+export { Categories as UnwrappedCategories }; 

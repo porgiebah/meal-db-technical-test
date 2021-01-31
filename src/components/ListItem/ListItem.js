@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types';
 import ReactMarkdown from "react-markdown";
-import appStyles from './appStyles';
+import appStyles from '../../appStyles';
 
 const { listItemStyles: styles } = appStyles;
 
