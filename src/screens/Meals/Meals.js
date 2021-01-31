@@ -37,7 +37,7 @@ class Meals extends Component {
   renderItem = (item) => {
     const { strMealThumb, strMeal, idMeal } = item;
     return (
-      <ListItem imageUrl={strMealThumb} title={strMeal} onPress={this.getRecipe} text='Click for recipe' id={idMeal} key={idMeal}/>
+      <ListItem imageUrl={strMealThumb} title={strMeal} onPress={this.getRecipe} text='Click to view recipe' id={idMeal} key={idMeal}/>
     );
   };
 
